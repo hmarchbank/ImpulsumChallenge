@@ -2,16 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { extendTheme, ChakraProvider } from '@chakra-ui/react';
+import { theme } from './theme';
+import { StyleFunctionProps } from '@chakra-ui/theme-tools'
+const { colors, breakpoints, components, space, radii, shadows, textStyles} = theme;
+
+const inPulsumTheme = extendTheme({
+  components,
+  colors, 
+  breakpoints, 
+  space, 
+  radii, 
+  shadows, 
+  textStyles,
+})
+
+
+export default theme
+
+
+
+console.log(inPulsumTheme)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <ChakraProvider theme={inPulsumTheme}>
+      <App />
+    </ChakraProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
