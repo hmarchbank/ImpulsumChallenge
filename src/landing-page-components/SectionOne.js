@@ -1,9 +1,6 @@
-import { Flex, Box, Image, Text, IconArrowRight, TextPairing } from '@cmpsr/components'
+import { Flex, Box, Image, Text, TextPairing } from '@cmpsr/components'
 
 const SectionOne = () => {
-
-    console.log(TextPairing)
-    console.log(Text)
     return (
         <>
             <Flex ml={['spacer-4', 'spacer-32']} mt="spacer-28" mr={['spacer-4', 'spacer-16']} alignItems="center" flexDirection={["column-reverse", "row"]}>

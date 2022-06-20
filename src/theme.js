@@ -377,6 +377,15 @@ export const theme = {
     },
   },
   components: {
+  //   Button: {
+  //     varirants: {
+  //       'blue': {
+  //         borderRadius: 'radii-6',
+  //         color: 'red',
+  //         background: 'text-button-accent'
+  //       }
+  //     }
+  //   },
     TextPairing: {
       parts: ['label', 'subLabel'],
       variants: {

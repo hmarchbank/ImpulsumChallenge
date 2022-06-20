@@ -1,4 +1,4 @@
-import { Divider, Flex, Box, Image, Text, Button, IconArrowRight, Link } from '@cmpsr/components'
+import { Flex, Box, Image, Text, Button, IconArrowRight, Link } from '@cmpsr/components'
 
 const Footer = () => {
     return(
